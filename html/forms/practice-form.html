@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body> 
+<form action="success.html" method="post">
+  	<div>
+
+    	<label>First Name:</label>
+    	<input type="text" name="first-name">
+  	</div>
+  	<div>
+    	<label>Last Name:</label>
+    	<input type="text" name="last-name">
+  </div>
+
+   <div> 
+
+   		<label>Favorite Animals</label>
+   		<select name="animals">	
+   			<option value =  "pet"> Dog</option>
+   			<option value =  "pet"> Cat </option>
+   			<option value =  "pet"> Rabbit </option>
+
+   			</select>
+   </div>
+   <div> 
+
+		<textarea name="textarea"  rows="10" cols="50">Write something about yourself.</textarea>
+	</div>
+
+  	<div> 
+  		<label> What is your birthdate?</label>
+  		<input type="date" name="date">
+	</div>
+	<div>
+		<strong> </strong> Do you like Chocolate?
+		<input type="radio" name="q1" value="y">Yes
+		<input type="radio" name="q1" value="n">No 
+		<input type="radio" name="q1" value="?" checked="">Prefer not to Say
+	</div>
+
+	<div> 
+  		
+		<input type="checkbox" name="cb-agree" value="agree">
+
+		I agree that all the information provided is valid to the best of my knowledge.
+
+	</div>
+		<button type="submit">Submit Form</button>
+	</body>
+</html>
