@@ -1,0 +1,27 @@
+Eleveator Pesudopseudoccode:
+
+1. Keep elevator doors open until the weight limit or capacity has been reached or there are no new passengers. 
+2. Ask passengers individually which floors that they would like to go to. 
+3. If there are multiple passengers who would like to go to the same floor group them in a list. 
+4. Next go to the nearest floor specified by passengers as their destination in the intended direction specified by the "first" passenger(up or down). 
+5. Continue until passengers that in the afomentioned direction have left the elevator or new passenger(s) have arrived that wish to go in the opposite direction. 
+
+6. If no new passengers have arrived go to the ground floor of the building as this will likeley have  the most foot traffic for passengers. 
+
+
+Reheat_Pizza.exe
+
+1. Open Bottom Fridge Door
+2. Locate Brown Cardboard Box with Hungry Howie's listed in bold letters. 
+3. Remove intended slices for consumption. Place on Baking Sheet on metal pizza pan.
+4. Remove Everything that is flamable from the oven. 
+5. Set oven temperature to 450 F. 
+6. When sound indicates that temperature has been reached put on oven mitts over hands.
+7. Once oven mitts are securely over fingers and hands, grab pizza pan and place in second rack from the top.
+8. Create a timer for 10 mins and start timer.
+9. Once timer beeps, make sure oven mitts are on and remove the pizza pan. 
+10. Switch oven off.
+11. Wait 5 mins, then place pizza onto plate using hands not oven mitts.
+12. Add garnishments and sauces as you require and enjoy.
+
+
