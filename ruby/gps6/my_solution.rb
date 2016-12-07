@@ -59,16 +59,28 @@ end
 # DRIVER CODE
  # initialize VirusPredictor for each state
  alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-# alabama.virus_effects
-# jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-# jersey.virus_effects
-# california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-# california.virus_effects
-# alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-# alaska.virus_effects
+alabama.virus_effects
+jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
+jersey.virus_effects
+california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
+california.virus_effects
+alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
+alaska.virus_effects
 STATE_DATA.each do |state_name,population_hash|
   usa = VirusPredictor.new(state_name,population_hash[:population_density], population_hash[:population])
   usa.virus_effects
 end
 #=======================================================================
 # Reflection Section
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+#The first requires an operator that looks like "=>" and the next is those that require colons as symbols.
+# What does require_relative do? How is it different from require?
+#require relative gives the ability to access a file in the same directory and the require statement needs the full path from the root directory. 
+# What are some ways to iterate through a hash?
+#The most common way that we used was the .each method
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# that once they are called if the method does not require them they are not needed in the method at all. 
+# What concept did you most solidify in this challenge?
+#I finally feel like I understood what it means to iterate through a hash multiple times. 
+#Ravi Joshi
+
