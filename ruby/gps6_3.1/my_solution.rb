@@ -4,7 +4,7 @@ require_relative 'state_data'
 # Require Relative reads the files from the related folder with the file name.
 
 class VirusPredictor
-
+ 
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
