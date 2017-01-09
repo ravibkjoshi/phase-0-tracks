@@ -1,22 +1,22 @@
 class TodoList
 
-attr_accessor :get_items
-	
-	def initialize(listarr)
-	@get_items = listarr
-	end 
+   attr_accessor :get_items
 
-	def add_item(new_item)
-		@get_items << new_item
-	end
-	def delete_item(deleted_item)
-		@get_items.shift
-	end 
-	def get_item(index)
+   def initialize(arr)
+       @get_items = arr 
+   end
 
-	@get_items[index]
-	end 
+   def add_item(new)
+       @get_items.push(new)
+   end
 
+   def delete_item(del)
+       @get_items.delete(del)
+   end
+
+   def get_item(index)
+       @get_items[index]
+   end 
 end
 
 
@@ -42,3 +42,4 @@ end
 #     expect(list.get_item(0)).to eq "do the dishes"
 #   end
 # end
+#code
