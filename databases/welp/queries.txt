@@ -1,0 +1,15 @@
+2) SELECT * FROM reviews JOIN businesses ON businesses.id = reviews.businesses_id JOIN users ON users.id = reviews.users_id;
+
+1|5|Awesome Place|1|2|2|Sushi World|1|Steven Wonder|51
+2|2|Disgusting|1|2|2|Sushi World|1|Steven Wonder|51
+3|0|HELLISH OMFG|1|2|2|Sushi World|1|Steven Wonder|51
+
+3) SELECT users.name, businesses.name, reviews.stars,  reviews.comment FROM reviews INNER JOIN businesses ON businesses.id = reviews.businesses_id INNER JOIN users ON users.id = reviews.users_id;
+Steven Wonder|Sushi World|5|Awesome Place
+Steven Wonder|Sushi World|2|Disgusting
+Steven Wonder|Sushi World|0|HELLISH OMFG
+
+4) SELECT * FROM reviews JOIN businesses ON businesses.id = reviews.businesses_id JOIN users ON reviews.users_id = users.id;
+1|5|Awesome Place|1|2|2|Sushi World|1|Steven Wonder|51
+2|2|Disgusting|1|2|2|Sushi World|1|Steven Wonder|51
+3|0|HELLISH OMFG|1|2|2|Sushi World|1|Steven Wonder|51
