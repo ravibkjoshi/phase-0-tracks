@@ -1,3 +1,4 @@
+Release 2
 1. Display the information in one table (either table is fine).
 
 Input : select * from players;
@@ -61,3 +62,27 @@ Updated Table:
 2|Stephen Curry|6 ft 3 in|190|1
 4|Klay Thompson|6 ft 7 in|215|4
 5|Kevin Durant|6 ft 9 in|240|3
+
+Release 3
+
+Inner Join: SELECT  players.name, players.height, players.weight, universities.name
+   ...>      FROM players
+   ...>      INNER JOIN universities
+   ...>      ON universities.ID = players.university_id;
+
+Output:
+Ian Clark|6 ft 3 in|175|Belmont University
+Stephen Curry|6 ft 3 in|190|Davidson College
+Klay Thompson|6 ft 7 in|215|Washington State
+Kevin Durant|6 ft 9 in|240|Texas
+
+Left Join: SELECT  players.name, players.height, players.weight, universities.name
+   ...>      FROM players
+   ...>      LEFT JOIN universities
+   ...>      ON universities.ID = players.university_id;
+
+Output:
+Ian Clark|6 ft 3 in|175|Belmont University
+Stephen Curry|6 ft 3 in|190|Davidson College
+Klay Thompson|6 ft 7 in|215|Washington State
+Kevin Durant|6 ft 9 in|240|Texas
