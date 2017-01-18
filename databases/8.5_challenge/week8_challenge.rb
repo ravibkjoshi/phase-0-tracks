@@ -29,7 +29,7 @@ def remove_student(db, name)
   db.execute("DELETE FROM students WHERE name = ?", [name])  
 end
 def update_student(db,name,address)
-	db.execute("UPDATE students SET address= #{address} WHERE name=?" ,[name]) 
+	db.execute("UPDATE students SET address = ? WHERE name=?" ,[address, name]) 
 end
 def view_students(db)
 	 list = db.execute("SELECT * FROM students")
@@ -42,7 +42,7 @@ puts " Welcome to student records!"
 puts ""
 puts " Here you can update, add remove and view students as you wish."
 
-100.times do
+10.times do
   create_student(db, Faker::Name.name, Faker::Address.street_address)
 end
 
@@ -63,7 +63,7 @@ until done
   		removed_student = gets.chomp
   		remove_student(db,removed_student)
 	when "update"
-  		puts "You have selected to remove a student from our records. Which student would you like to update?"
+  		puts "You have selected to update a student from our records. Which student would you like to update?"
   		updated_student = gets.chomp
   		puts "What is there new address?"
   		updated_address = gets.chomp
