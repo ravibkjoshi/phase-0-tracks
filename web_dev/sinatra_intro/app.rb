@@ -29,10 +29,10 @@ get '/students' do
   students = db.execute("SELECT * FROM students")
   response = ""
   students.each do |student|
-    response << "ID: #{student['id']}<br>"
-    response << "Name: #{student['name']}<br>"
-    response << "Age: #{student['age']}<br>"
-    response << "Campus: #{student['campus']}<br><br>"
+    response << " ID: #{student['id']}"
+    response << " Name: #{student['name']}"
+    response << " Age: #{student['age']}"
+    response << " Campus: #{student['campus']}<br>"
   end
   response
 end
@@ -44,3 +44,26 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+
+# create contact route that displays address
+get '/contact/:address' do
+" Your package is being shipped to #{params[:address]}"
+end 
+
+get '/great_job' do
+  name = params[:name]
+  if name
+    "Good job, #{name}!"
+  else
+    "Good job!"
+  end
+end
+
+get '/:num1/plus/:num2' do
+num1 = params[:num1]
+num2 = params[:num2]
+result = num1.to_i + num2.to_i
+"#{num1} + #{num2} = #{result}"
+end
+
